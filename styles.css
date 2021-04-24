@@ -1,0 +1,61 @@
+* {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+}
+
+.cell {
+  text-align: right;
+}
+
+bcontainer {
+  padding: 20px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 25px;
+}
+
+.column1 {
+  width: 25%;
+}
+
+.column2 {
+  width: 50%;
+}
+
+.column3 {
+  width: 25%;
+}
+
+.column2 * {
+  width: 100%;
+}
+
+span {
+  color: #555;
+  font-size: 11px;
+}
+
+.back {
+  width: 70px;
+}
+
+.front {
+  text-align: center;
+  width: 500px;
+}
+
+.links {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
