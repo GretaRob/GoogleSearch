@@ -9,11 +9,11 @@
     <body>
         <div class="bcontainer">
             <img class='back' src="google-2015.svg" alt="google-logo">
-            <div>
+            <div class="links">
                 <a class="linksearch" href="index.html">Google Search</a>
             </div>
             <div class="container">
-                <h4>Advanced Search</h2>
+                <h4 style="color: rgb(219, 21, 21);">Advanced Search</h2>
                 <form action="https://google.com/search">
                     <table>
                         <thead>
@@ -32,14 +32,17 @@
                             <tr>
                                 <td>exact word or phrase:</td>
                                 <td class="column2"><input type="text" name="as_epq"></td>
+                                <td class="column3">Put exact words in quotes: <span>"rat terrier"</span></td>
                             </tr>
                             <tr>
                                 <td>any of these words:</td>
                                 <td class="column2"><input type="text" name="as_oq"></td>
+                                <td class="column3">Type OR between all the words you want: <span>miniature OR standard</span></td>
                             </tr>
                             <tr>
                                 <td>none of these words:</td>
                                 <td class="column2"><input type="text" name="as_eq"></td>
+                                <td class="column3">Put a minus sign just before words that you don't want: <span>-rodent, -"Jack Russell"</span></td>
                             </tr>
                             <tr>
                                 <td></td>

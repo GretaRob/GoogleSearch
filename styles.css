@@ -1,13 +1,15 @@
-* {
+body {
   font-family: arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
+  margin: 0px;
+  height: 100vh;
 }
 
 .cell {
   text-align: right;
 }
 
-bcontainer {
+.bcontainer {
   padding: 20px;
 }
 
@@ -26,6 +28,7 @@ table {
 
 .column3 {
   width: 25%;
+  font-size: 11px;
 }
 
 .column2 * {
@@ -58,4 +61,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  /* Align the search container in the center of the viewport */
+  justify-content: center;
+  align-items: center;
 }
