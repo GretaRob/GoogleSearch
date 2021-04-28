@@ -9,13 +9,27 @@ body {
   text-align: right;
 }
 
-.bcontainer {
-  padding: 20px;
+table {
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+  padding: 100px;
+  border-collapse: separate;
+  border-spacing: 0 55px;
 }
 
-table {
-  border-collapse: separate;
-  border-spacing: 0 25px;
+.container {
+  position: absolute;
+}
+
+h4 {
+  padding: 40px;
+}
+
+td,
+th {
+  padding: 50px;
 }
 
 .column1 {
@@ -29,6 +43,7 @@ table {
 .column3 {
   width: 25%;
   font-size: 11px;
+  padding: 10px;
 }
 
 .column2 * {
@@ -41,15 +56,17 @@ span {
 }
 
 .back {
-  width: 70px;
+  width: 120px;
+  padding: 20px;
 }
 
 .front {
   text-align: center;
-  width: 500px;
+  width: 300px;
 }
 
 .links {
+  display: flex;
   position: absolute;
   top: 0;
   right: 0;
@@ -57,6 +74,7 @@ span {
 
 a {
   text-decoration: none;
+  padding: 5px;
 }
 
 a:hover {
@@ -69,4 +87,47 @@ a:hover {
   /* Align the search container in the center of the viewport */
   justify-content: center;
   align-items: center;
+  height: 90%;
+}
+
+.search .search-field {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  border: 1px solid #afafaf;
+  align-items: center;
+  margin: 10px;
+  padding-left: 15px;
+}
+
+.search .search-field input {
+  border: none;
+  border-radius: 25px;
+}
+
+input {
+  font-size: 16px;
+  width: 300px;
+  padding: 13px 0;
+  /* Parent selector = & */
+}
+input:focus {
+  outline: none;
+}
+input[type="text"] {
+  /* Give input text a lighter color */
+  color: #464646;
+  margin: 0 0 0 5px;
+}
+input[type="submit"] {
+  font-size: 14px;
+  width: 185px;
+  /* Remove border */
+  border-width: 0px;
+  border-radius: 5px;
+  margin: 10px;
+}
+input[type="submit"]:hover {
+  /* Add box-shadow when hovering button (border adds space) */
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
 }
